@@ -15,6 +15,7 @@
     "wdio": "npm run wdio:ios && npm run wdio:android",
     "wdio:ios": "wdio run ./config/wdio.ios.conf.js",
     "wdio:android": "wdio run ./config/wdio.android.conf.js",
+    "wdio:android-real" : "wdio run ./config/wdio.android-real.conf.js",
     "allure:report": "allure generate allure-results -c -o allure-report",
     "allure:open": "allure open allure-report",
     "allure": "npm run allure:report && npm run allure:open"

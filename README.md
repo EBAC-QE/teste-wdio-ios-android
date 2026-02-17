@@ -57,7 +57,13 @@ xcrun simctl list devices
 Se estiver no Windows/Android, valide dispositivos com:
 
 ```bash
-adb devices
+adb devices -l
+```
+
+Para saber a versão do Android SDK:
+
+```bash
+adb shell getprop ro.build.version.release
 ```
 
 ## 4) Executar os testes
