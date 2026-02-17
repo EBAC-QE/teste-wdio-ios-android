@@ -7,7 +7,8 @@ describe('Funcionalidade: Login', () => {
     });
 
     afterEach( async () => {
-        await browser.relaunchActiveApp()
+        //await browser.relaunchActiveApp()
+        await browser.reloadSession()
     });
 
 

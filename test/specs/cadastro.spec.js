@@ -3,7 +3,8 @@ import CadastroPage from '../pageobjects/cadastro.page'
 describe('Funcionalidade: Cadastro', () => {
 
     beforeEach( async () => {
-        await browser.relaunchActiveApp()
+        //await browser.relaunchActiveApp()
+        await browser.reloadSession()
         await CadastroPage.open()
     });
 
